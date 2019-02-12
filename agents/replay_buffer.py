@@ -14,4 +14,4 @@ class ReplayBuffer:
         return len(self.buffer)
 
     def sample(self, count):
-        return random.sample(self.buffer, count)
+        return random.sample(self.buffer, k=count)
